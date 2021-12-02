@@ -1,0 +1,35 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    background-image: url(./assets/background-image.png);
+    background-repeat: repeat;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    max-width: 500px;
+    max-height: 180px;
+    padding: 2rem 4rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        background-image: url(./assets/background-image_small.png);
+    }
+}
